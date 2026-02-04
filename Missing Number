@@ -1,0 +1,8 @@
+int missingNumber(int nums[], int numsSize) {
+    int a = 0,i;
+    int b = numsSize * (numsSize + 1) / 2;
+    for (i = 0; i < numsSize; i++) {
+        a+= nums[i];
+    }
+    return b - a;
+}
